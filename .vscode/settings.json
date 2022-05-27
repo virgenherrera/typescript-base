@@ -1,20 +1,30 @@
 {
-  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "codemetrics.basics.CodeLensHiddenUnder": 7,
+  "codemetrics.basics.EnabledForHTML": false,
+  "codemetrics.basics.MetricsForClassDeclarationsToggled": false,
   "editor.codeActionsOnSave": {
     "source.organizeImports": true,
     "source.fixAll.eslint": true
   },
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "editor.formatOnSave": true,
+  "emmet.triggerExpansionOnTab": true,
+  "errorLens.delay": 3000,
+  "errorLens.messageTemplate": "$severity: $message",
   "eslint.format.enable": true,
   "eslint.options": {
     "overrideConfigFile": ".eslintrc.yml"
   },
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "typescript.tsdk": "node_modules/typescript/lib",
   "eslint.validate": [
     "json",
-    "javascript"
+    "javascript",
+    "typescript"
   ],
+  "git.autofetch": true,
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.referencesCodeLens.enabled": true,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.updateImportsOnFileMove.enabled": "always",
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },

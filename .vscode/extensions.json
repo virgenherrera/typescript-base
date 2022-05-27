@@ -5,6 +5,8 @@
     "dbaeumer.vscode-eslint",
     "EditorConfig.EditorConfig",
     "esbenp.prettier-vscode",
-    "redhat.vscode-yaml"
+    "kisstkondoros.vscode-codemetrics",
+    "redhat.vscode-yaml",
+    "usernamehw.errorlens"
   ]
 }
