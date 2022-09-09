@@ -1,6 +1,3 @@
-const a = 'hello';
-const b = 'world';
+import { sayHi } from './say-hi';
 
-const c = `${a} ${b}`;
-
-console.log(c);
+console.log(sayHi());
