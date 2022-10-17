@@ -32,9 +32,11 @@
   },
   "exclude": [
     "node_modules",
-    "dist",
-    "coverage",
+    "./*.ts",
     ".vscode",
-    "**/__tests__/*"
+    "**/__tests__/*",
+    "coverage",
+    "dist",
+    "test",
   ]
 }
