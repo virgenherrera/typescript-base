@@ -6,7 +6,6 @@
     "EditorConfig.EditorConfig",
     "esbenp.prettier-vscode",
     "kisstkondoros.vscode-codemetrics",
-    "redhat.vscode-yaml",
     "usernamehw.errorlens"
   ]
 }
