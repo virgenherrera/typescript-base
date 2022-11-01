@@ -13,7 +13,7 @@
   "errorLens.messageTemplate": "$severity: $message",
   "eslint.format.enable": true,
   "eslint.options": {
-    "overrideConfigFile": ".eslintrc.yml"
+    "overrideConfigFile": ".eslintrc.json"
   },
   "eslint.validate": [
     "json",
