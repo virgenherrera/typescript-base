@@ -1,6 +1,6 @@
 {
   "name": "vs-node-code-tpl",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,6 +9,8 @@
     "test": "run-s -l check:* test:*",
     "cleanup": "rimraf coverage/ dist/",
     "prestart": "run-s -l cleanup build:ts",
+    "UT:develop": "jest --watch --maxWorkers=1",
+    "UT:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:unit": "jest",
     "check:eslint": "eslint \"src/**/*.ts\"",
     "check:prettier": "prettier --check \"src/**/*.ts\"",
@@ -17,29 +19,29 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/virgenherrera/vs-node-code-tpl.git"
+    "url": "git+https://github.com/virgenherrera/typescript-base.git"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/virgenherrera/vs-node-code-tpl/issues"
+    "url": "https://github.com/virgenherrera/typescript-base/issues"
   },
-  "homepage": "https://github.com/virgenherrera/vs-node-code-tpl#readme",
+  "homepage": "https://github.com/virgenherrera/typescript-base#readme",
   "devDependencies": {
-    "@types/jest": "^29.2.2",
+    "@types/jest": "^29.2.3",
     "@types/node": "^18.11.9",
-    "@typescript-eslint/eslint-plugin": "^5.42.1",
-    "@typescript-eslint/parser": "^5.42.1",
-    "eslint": "^8.27.0",
+    "@typescript-eslint/eslint-plugin": "^5.44.0",
+    "@typescript-eslint/parser": "^5.44.0",
+    "eslint": "^8.28.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "jest": "^29.3.0",
+    "jest": "^29.3.1",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.7.1",
     "rimraf": "^3.0.2",
     "ts-jest": "^29.0.3",
     "ts-node": "^10.9.1",
-    "typescript": "^4.8.4"
+    "typescript": "^4.9.3"
   }
 }
