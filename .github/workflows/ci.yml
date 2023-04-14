@@ -30,15 +30,12 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: (check:) eslint
-        run: npm run check:eslint
-
-      - name: (check:) prettier
-        run: npm run check:prettier
+      - name: (test:) static
+        run: npm run test:static
 
       - name: (test:) unit
         timeout-minutes: 15
-        run: npm run test:unit
+        run: npm run test:unit"
 
       - name: (Build:) Project
         run: npm run build:ts

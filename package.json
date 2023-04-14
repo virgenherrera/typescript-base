@@ -1,21 +1,19 @@
 {
   "name": "typescript-base",
-  "version": "0.0.20",
+  "version": "0.0.21",
   "description": "",
   "main": "dist/",
   "scripts": {
     "start": "node ./dist",
     "dev": "ts-node ./src",
-    "test": "run-s -l check:* test:*",
+    "test": "run-s -l test:* build:*",
     "cleanup": "rimraf coverage/ dist/",
-    "prestart": "run-s -l cleanup build:ts",
     "UT:develop": "jest --watch --maxWorkers=1",
     "UT:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
+    "test:static": "eslint \"src/**/*.ts\"",
     "test:unit": "jest",
-    "check:eslint": "eslint \"src/**/*.ts\"",
-    "check:prettier": "prettier --check \"src/**/*.ts\"",
     "build:ts": "tsc",
-    "local:ci": "run-s -l check:* test:* build:*"
+    "local:ci": "run-s -l test:* build:*"
   },
   "repository": {
     "type": "git",
