@@ -7,17 +7,18 @@
     "source.fixAll.eslint": true
   },
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "emmet.triggerExpansionOnTab": true,
-  "errorLens.delay": 3000,
+  "errorLens.delay": 2e3,
   "errorLens.messageTemplate": "$severity: $message",
   "eslint.format.enable": true,
   "eslint.options": {
-    "overrideConfigFile": ".eslintrc.json"
+    "overrideConfigFile": ".eslintrc.json",
+    "ignore":true
   },
   "eslint.validate": [
-    "json",
     "javascript",
+    "json",
     "typescript"
   ],
   "git.autofetch": true,
@@ -34,4 +35,5 @@
   "[yaml]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
+  "cSpell.words": []
 }
