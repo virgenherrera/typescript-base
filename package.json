@@ -1,17 +1,17 @@
 {
   "name": "typescript-base",
-  "version": "0.0.23",
+  "version": "0.0.24",
   "description": "",
-  "main": "dist/",
   "scripts": {
     "start": "node ./dist",
     "dev": "ts-node ./src",
-    "test": "run-s -l test:* build:*",
+    "test": "run-s -l cleanup test:* build:*",
     "UT:develop": "jest --watch --maxWorkers=1",
     "UT:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:static": "eslint src/ --ext=.ts",
     "test:unit": "jest",
     "build:ts": "tsc",
+    "prestart": "tsc --declaration false --sourceMap false",
     "cleanup": "rimraf coverage/ dist/"
   },
   "repository": {
@@ -26,19 +26,19 @@
   },
   "homepage": "https://github.com/virgenherrera/typescript-base#readme",
   "devDependencies": {
-    "@types/jest": "^29.5.1",
-    "@types/node": "^18.16.0",
-    "@typescript-eslint/eslint-plugin": "^5.59.0",
-    "@typescript-eslint/parser": "^5.59.0",
-    "eslint": "^8.39.0",
+    "@types/jest": "^29.5.2",
+    "@types/node": "^20.3.3",
+    "@typescript-eslint/eslint-plugin": "^5.60.1",
+    "@typescript-eslint/parser": "^5.60.1",
+    "eslint": "^8.44.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
     "jest": "^29.5.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.8.8",
-    "rimraf": "^5.0.0",
-    "ts-jest": "^29.1.0",
+    "rimraf": "^5.0.1",
+    "ts-jest": "^29.1.1",
     "ts-node": "^10.9.1",
-    "typescript": "^5.0.4"
+    "typescript": "^5.1.6"
   }
 }
