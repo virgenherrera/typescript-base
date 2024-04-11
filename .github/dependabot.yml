@@ -15,14 +15,3 @@ updates:
     labels:
       - "dependabot"
       - "github-actions dependencies"
-
-  - package-ecosystem: "npm"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-      day: "monday"
-      time: "00:00"
-      timezone: "America/Mexico_City"
-    labels:
-      - "dependabot"
-      - "npm dependencies"

@@ -3,8 +3,8 @@
   "codemetrics.basics.EnabledForHTML": false,
   "codemetrics.basics.MetricsForClassDeclarationsToggled": false,
   "editor.codeActionsOnSave": {
-    "source.organizeImports": true,
-    "source.fixAll.eslint": true
+    "source.organizeImports": "explicit",
+    "source.fixAll.eslint": "explicit"
   },
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "editor.formatOnSave": false,
@@ -22,6 +22,7 @@
     "typescript"
   ],
   "git.autofetch": true,
+  "npm.packageManager": "pnpm",
   "typescript.preferences.importModuleSpecifier": "relative",
   "typescript.referencesCodeLens.enabled": true,
   "typescript.tsdk": "node_modules/typescript/lib",

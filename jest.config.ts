@@ -3,9 +3,9 @@
  * https://jestjs.io/docs/en/configuration.html
 
 */
-import type { Config } from '@jest/types';
+import type { Config } from 'jest';
 
-export const BaseConfig: Config.InitialOptions = {
+export const BaseConfig: Config = {
   collectCoverage: true,
   collectCoverageFrom: ['**/*.ts', '!**/(index|main).ts'],
   coverageDirectory: '../coverage/unit',
