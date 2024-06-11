@@ -20,7 +20,10 @@
     "plugin:prettier/recommended",
     "prettier"
   ],
-  "ignorePatterns": [],
+  "ignorePatterns": [
+    "/dist/**",
+    "/node_modules/**"
+  ],
   "rules": {
     "@typescript-eslint/interface-name-prefix": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
